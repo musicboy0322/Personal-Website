@@ -1,13 +1,21 @@
-// components/Sidebar.tsx
 import React from "react";
 import Image from "next/image";
 import { Mail, MapPin, FileText, Github, Linkedin } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <aside className="bg-[#2a201b]/95 text-[#f1e7d0] w-fit min-w-[18rem] max-w-[22rem] p-6 rounded-2xl shadow-lg border border-[#3d2c20] m-6 flex flex-col items-center backdrop-blur-sm">
+    <aside
+        className="sticky top-10 self-start 
+                    bg-[#1E293B] text-[#F8FAFC] 
+                    w-fit min-w-[18rem] max-w-[22rem] 
+                    p-6 rounded-t-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)] 
+                    border border-[#334155] 
+                    flex flex-col items-center backdrop-blur-sm 
+                    translate-y-[-0.75rem]
+                    mt-10"
+    >
       {/* 🖼️ 個人照片 */}
-      <div className="w-32 h-32 mb-4 rounded-xl overflow-hidden border border-[#5c4033] shadow-md bg-[#1a1410]">
+      <div className="w-32 h-32 mb-4 rounded-xl overflow-hidden border border-[#22D3EE]/50 shadow-[0_0_20px_#22D3EE40]">
         <Image
           src="/headshot.jpeg"
           alt="Kai-Lin (Kyle) Kao"
@@ -19,24 +27,24 @@ export default function Sidebar() {
 
       {/* 上方：個人資訊 */}
       <div className="text-center">
-        <h1 className="text-3xl font-bold mb-2 whitespace-nowrap text-[#f8f3e7]">
+        <h1 className="text-3xl font-bold mb-2 whitespace-nowrap text-[#F8FAFC]">
           Kai-Lin (Kyle) Kao
         </h1>
-        <p className="text-[#d8c7a3] text-sm mb-6">Software Engineer</p>
+        <p className="text-[#94A3B8] text-sm mb-6">Software Engineer</p>
 
         <ul className="space-y-4 text-left">
           {/* Location */}
           <li className="flex items-center gap-3">
-            <MapPin size={18} className="text-[#f59e0b]" />
-            <span className="text-[#f1e7d0] text-sm">Waterloo, Ontario</span>
+            <MapPin size={18} className="text-[#06B6D4]" />
+            <span className="text-sm text-[#E2E8F0]">Waterloo, Ontario</span>
           </li>
 
           {/* Email */}
           <li className="flex items-center gap-3">
-            <Mail size={18} className="text-[#f59e0b]" />
+            <Mail size={18} className="text-[#06B6D4]" />
             <a
               href="mailto:kyle.kao.company@gmail.com"
-              className="text-[#f1e7d0] text-sm hover:text-[#fbbf24] transition"
+              className="text-sm hover:text-[#22D3EE] transition"
             >
               kyle.kao.company@gmail.com
             </a>
@@ -44,12 +52,12 @@ export default function Sidebar() {
 
           {/* GitHub */}
           <li className="flex items-center gap-3">
-            <Github size={18} className="text-[#f59e0b]" />
+            <Github size={18} className="text-[#06B6D4]" />
             <a
               href="https://github.com/musicboy0322"
               target="_blank"
               rel="noreferrer"
-              className="text-[#f1e7d0] text-sm hover:text-[#fbbf24] transition"
+              className="text-sm hover:text-[#22D3EE] transition"
             >
               github.com/musicboy0322
             </a>
@@ -57,12 +65,12 @@ export default function Sidebar() {
 
           {/* LinkedIn */}
           <li className="flex items-center gap-3">
-            <Linkedin size={18} className="text-[#f59e0b]" />
+            <Linkedin size={18} className="text-[#06B6D4]" />
             <a
               href="https://www.linkedin.com/in/kyle-kao-software"
               target="_blank"
               rel="noreferrer"
-              className="text-[#f1e7d0] text-sm hover:text-[#fbbf24] transition"
+              className="text-sm hover:text-[#22D3EE] transition"
             >
               linkedin.com/in/kyle-kao-software
             </a>
@@ -70,12 +78,12 @@ export default function Sidebar() {
 
           {/* CV */}
           <li className="flex items-center gap-3">
-            <FileText size={18} className="text-[#f59e0b]" />
+            <FileText size={18} className="text-[#06B6D4]" />
             <a
               href="https://drive.google.com/file/d/1a_avnxFZCDcHHj-y6D8P6HUN2qjRw9Yu/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="text-[#f1e7d0] text-sm hover:text-[#fbbf24] transition"
+              className="text-sm hover:text-[#22D3EE] transition"
             >
               View CV
             </a>
@@ -84,7 +92,7 @@ export default function Sidebar() {
       </div>
 
       {/* 底部版權 */}
-      <footer className="text-xs text-[#bfa87a] mt-6">
+      <footer className="text-xs text-[#64748B] mt-6">
         © {new Date().getFullYear()} Kyle Kao
       </footer>
     </aside>
