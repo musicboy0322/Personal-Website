@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import AboutSection from "@/components/sections/About";
-import ExperienceSection from "@/components/sections/Experiences";
-import ProjectSection from "@/components/sections/Projects";
+import AboutSection from "@/components/sections/AboutSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
+import ProjectSection from "@/components/sections/ProjectSection";
 import Navbar from "@/components/Navbar";
 
 export default function HomePage() {
@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="bg-[#1E293B] border border-[#334155] 
                     rounded-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)] 
-                    p-10 backdrop-blur-md text-[#F8FAFC] transition-all duration-500
+                    p-10 backdrop-blur-md text-[#F8FAFC] transition-all duration-400
                     mt-7">
 
       {/* ✅ Navbar 放在這裡控制區塊切換 */}

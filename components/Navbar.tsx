@@ -15,11 +15,12 @@ export default function Navbar({ active, onSelect }: NavbarProps) {
 
   return (
     <nav
-      className="mx-auto mb-8 w-fit px-8 py-3 
-                 bg-[#1E293B] text-[#F8FAFC] 
-                 border border-[#334155] rounded-2xl 
-                 shadow-[0_0_20px_rgba(6,182,212,0.3)] 
-                 backdrop-blur-md flex items-center gap-8"
+        className="mx-auto mb-8 w-fit px-8 py-3
+             bg-[#1E293B] text-[#F8FAFC]
+             border border-[#334155] rounded-2xl
+             shadow-[0_4px_20px_rgba(6,182,212,0.3)]
+             backdrop-blur-md flex items-center gap-8
+             overflow-visible"
     >
       {items.map((item) => (
         <button

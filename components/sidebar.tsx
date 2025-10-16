@@ -5,15 +5,15 @@ import { Mail, MapPin, FileText, Github, Linkedin } from "lucide-react";
 export default function Sidebar() {
   return (
     <aside
-        className="sticky top-10 self-start 
+        className="sticky top-0 self-start 
                     bg-[#1E293B] text-[#F8FAFC] 
                     w-fit min-w-[18rem] max-w-[22rem] 
-                    p-6 rounded-t-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)] 
+                    p-6 rounded-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)] 
                     border border-[#334155] 
                     flex flex-col items-center backdrop-blur-sm 
-                    translate-y-[-0.75rem]
-                    mt-10"
+                    mt-7"
     >
+
       {/* 🖼️ 個人照片 */}
       <div className="w-32 h-32 mb-4 rounded-xl overflow-hidden border border-[#22D3EE]/50 shadow-[0_0_20px_#22D3EE40]">
         <Image
