@@ -1,7 +1,9 @@
+import SectionTitle from "../SectionTitle";
+
 export default function ExperienceSection() {
     return (
       <section className="space-y-6 animate-fadeIn">
-        <h2 className="text-3xl font-bold text-[#06B6D4]">Experiences</h2>
+        <SectionTitle>Education</SectionTitle>
   
         <div className="space-y-6">
           <div>

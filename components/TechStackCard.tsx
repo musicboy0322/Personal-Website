@@ -15,6 +15,7 @@ export default function TechStackCard() {
       { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
       { icon: "/icons/frontend/react.svg", label: "React" },
       { icon: "/icons/frontend/nextjs.svg", label: "Next.js" },
+      { icon: "/icons/frontend/ejs.svg", label: "EJS" },
     ];
 
     const backend = [
@@ -37,6 +38,7 @@ export default function TechStackCard() {
         { icon: "/icons/devops/docker.svg", label: "Docker" },
         { icon: "/icons/devops/kubernetes.svg", label: "Kubernetes" },
         { icon: "/icons/devops/githubactions.svg", label: "GitHub Actions" },
+        { icon: "/icons/devops/apache.svg", label: "JMeter" },
     ];
 
     const cloud = [
@@ -49,7 +51,16 @@ export default function TechStackCard() {
         { icon: <span className="text-[13px]">📡</span>, label: "WebSocket" },
         { icon: <span className="text-[13px]">🔌</span>, label: "Socket" },
         { icon: "/icons/distributedSystem/apache.svg", label: "Thrift" },
+        { icon: "/icons/distributedSystem/apache.svg", label: "Hadoop" },
     ];
+
+    const ai = [
+        { icon: "/icons/ai/pandas.svg", label: "Pandas" },
+        { icon: "/icons/ai/numpy.svg", label: "NumPy" },
+        { icon: "/icons/ai/matplotlib.svg", label: "Matplotlib" },
+        { icon: "/icons/ai/scikitlearn.svg", label: "scikit-learn" },
+        { icon: "/icons/ai/keras.svg", label: "Keras" },
+    ]
   
     return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -192,6 +203,32 @@ export default function TechStackCard() {
           </h3>
           <div className="flex flex-wrap gap-3">
             {distributedSystem.map((tech, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-center gap-2 px-3 py-1.5 rounded-lg bg-[#0F172A]/60 border border-[#334155] text-sm text-[#E2E8F0]"
+              >
+                {typeof tech.icon === "string" ? (
+                    <img
+                    src={tech.icon}
+                    alt={tech.label}
+                    className="w-[13px] h-[13px] object-contain"
+                    />
+                ) : (
+                    <div className="text-[13px]">{tech.icon}</div>
+                )}
+                <span className="text-[13px]">{tech.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* --- AI --- */}
+        <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
+          <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
+            AI
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {ai.map((tech, i) => (
               <div
                 key={i}
                 className="flex items-center justify-center gap-2 px-3 py-1.5 rounded-lg bg-[#0F172A]/60 border border-[#334155] text-sm text-[#E2E8F0]"
