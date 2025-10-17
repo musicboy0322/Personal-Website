@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import AboutSection from "@/components/sections/AboutSection";
-import ExperienceSection from "@/components/sections/ExperienceSection";
-import ProjectSection from "@/components/sections/ProjectSection";
-import Navbar from "@/components/Navbar";
+import AboutSection from "../components/sections/AboutSection";
+import ExperienceSection from "../components/sections/ExperienceSection";
+import ProjectSection from "../components/sections/ProjectSection";
+import Navbar from "../components/Navbar";
 
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState("about");
