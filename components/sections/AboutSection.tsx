@@ -38,7 +38,6 @@ export default function AboutSection({ onSelect }: AboutSectionProps) {
       <div className="flex items-center justify-between mt-10">
         <SectionTitle className="!mt-0">Selected Projects</SectionTitle>
 
-        {/* ✅ 改成直接切換到 projects 區塊 */}
         <button
           onClick={() => onSelect?.("projects")}
           className="flex items-center gap-2 px-4 py-2 rounded-full 

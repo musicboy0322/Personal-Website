@@ -106,6 +106,7 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
         tags: [
           { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
           { icon: "/icons/programmingLanguage/shell.svg", label: "Shell" },
+          { icon: "/icons/devops/apache.svg", label: "JMeter" },
           { icon: "/icons/cloud/ibmcloud.svg", label: "IBM Cloud Openshift" },
         ],
     },
@@ -126,18 +127,28 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
   // --- AI ---
   const ai: Project[] = [
     {
-      title: "AI Learning",
-      description:
-        "A collection of machine learning and deep learning exercises focused on data analysis and classification tasks.",
-      link: "https://github.com/musicboy0322/AI-Learning",
-      tags: [
+        title: "NER Model Learning",
+        description:
+            "Fine-tuned a Chinese BERT model for named entity recognition to extract actor and category information from text.",
+        link: "https://github.com/musicboy0322/NER-Model-Learning",
+        tags: [
+          { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
+          { icon: "/icons/ai/pytorch.svg", label: "PyTorch" },
+        ],
+    },
+    {
+        title: "AI Learning",
+        description:
+            "A collection of machine learning and deep learning exercises focused on data analysis and classification tasks.",
+        link: "https://github.com/musicboy0322/AI-Learning",
+        tags: [
         { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
         { icon: "/icons/ai/pandas.svg", label: "Pandas" },
         { icon: "/icons/ai/numpy.svg", label: "NumPy" },
         { icon: "/icons/ai/matplotlib.svg", label: "Matplotlib" },
         { icon: "/icons/ai/scikitlearn.svg", label: "scikit-learn" },
         { icon: "/icons/ai/keras.svg", label: "Keras" },
-      ],
+        ],
     },
   ];
 
@@ -148,7 +159,6 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
     ai: ai,
   };
 
-  // ✅ 如果有指定 type，僅顯示該分類；否則顯示全部
   const selectedProjects = type ? categories[type] : Object.values(categories).flat();
 
   return (

@@ -60,6 +60,7 @@ export default function TechStackCard() {
         { icon: "/icons/ai/matplotlib.svg", label: "Matplotlib" },
         { icon: "/icons/ai/scikitlearn.svg", label: "scikit-learn" },
         { icon: "/icons/ai/keras.svg", label: "Keras" },
+        { icon: "/icons/ai/pytorch.svg", label: "PyTorch" },
     ]
   
     return (
