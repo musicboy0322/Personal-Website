@@ -98,15 +98,16 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
 
   // --- Distributed System ---
   const distributed: Project[] = [
-    {
-        title: "Acme Air Self-adaptive Driver",
+      {
+        title: "Self-Adaptive CarTunes",
         description:
-          "A self-adaptive driver implementing the MAPE-K feedback loop to optimize microservice performance within the Acme Air system.",
-        link: "https://github.com/musicboy0322/Acme-Air-Self-Adaptive-Driver",
+          "A self-adaptive control engine implementing a MAPE-K feedback loop to dynamically optimize microservice-level QoS and application-level QoE in the CarTunes system.",
+        link: "https://github.com/musicboy0322/Self-Adaptive-CarTunes",
         tags: [
           { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
+          { icon: "/icons/programmingLanguage/javascript.svg", label: "JavaScript" },
           { icon: "/icons/programmingLanguage/shell.svg", label: "Shell" },
-          { icon: "/icons/devops/apache.svg", label: "JMeter" },
+          { icon: "/icons/devops/k6.svg", label: "k6" },
           { icon: "/icons/cloud/ibmcloud.svg", label: "IBM Cloud Openshift" },
         ],
     },
@@ -121,7 +122,34 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
         { icon: "/icons/devops/docker.svg", label: "Docker" },
         { icon: "/icons/devops/kubernetes.svg", label: "Kubernetes" },
         ],
-    }
+    },
+    {
+        title: "Waterloo ECE751 Distributed and Network-Centric Computing",
+        description:
+        "Learned core principles of distributed and network-centric systems, including scalability, fault tolerance, and coordination, through hands-on projects involving large-scale data processing, distributed messaging, and service coordination.",
+        link: "https://uwaterloo.ca/electrical-computer-engineering/graduate-studies/current-students/courses/ece-graduate-course-archive/fall-2025-courses",
+        tags: [
+          { icon: "/icons/programmingLanguage/java.svg", label: "Java" },
+          { icon: "/icons/programmingLanguage/scala.svg", label: "Scala" },
+          { icon: "/icons/distributedSystem/apache.svg", label: "Thrift" },
+          { icon: "/icons/distributedSystem/apache.svg", label: "Hadoop" },
+          { icon: "/icons/distributedSystem/apache.svg", label: "Spark" },
+          { icon: "/icons/distributedSystem/apache.svg", label: "ZooKeeper" },
+          { icon: "/icons/distributedSystem/apache.svg", label: "Kafka" },
+        ],
+    },
+    {
+        title: "Self-Adaptive Acme Air",
+        description:
+          "A self-adaptive adaptation engine implementing a MAPE-K feedback loop to autonomously optimize microservice-level performance in the Acme Air system.",
+        link: "https://github.com/musicboy0322/Self-Adaptive-AcmeAir",
+        tags: [
+          { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
+          { icon: "/icons/programmingLanguage/shell.svg", label: "Shell" },
+          { icon: "/icons/devops/apache.svg", label: "JMeter" },
+          { icon: "/icons/cloud/ibmcloud.svg", label: "IBM Cloud Openshift" },
+        ],
+    },
   ];
 
   // --- AI ---

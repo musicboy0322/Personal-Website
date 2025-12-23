@@ -14,8 +14,8 @@ export default function AboutSection({ onSelect }: AboutSectionProps) {
       <SectionTitle>About Me</SectionTitle>
 
       <p className="text-[#E2E8F0] leading-relaxed">
-        I'm a first-year Master of Engineering (M.Eng.) student in Electrical and Computer Engineering
-        at the{" "}
+      I'm a Master of Engineering (M.Eng.) student in Electrical and Computer Engineering at the
+      {" "}
         <a
           target="_blank"
           href="https://uwaterloo.ca/"

@@ -8,7 +8,7 @@ export default function EducationSection() {
     {
       school: "University of Waterloo",
       degree: "Master of Engineering in Electrical and Computer Engineering",
-      period: "Sep. 2025 – Apr. 2027 (Expected)",
+      period: "Sep. 2025 – Dec. 2026 (Expected)",
       link: "https://uwaterloo.ca/",
       icon: "/icons/education/waterloo.svg",
     },

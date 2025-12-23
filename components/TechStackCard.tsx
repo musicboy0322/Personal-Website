@@ -7,6 +7,7 @@ export default function TechStackCard() {
         { icon: "/icons/programmingLanguage/javascript.svg", label: "JavaScript" },
         { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
         { icon: "/icons/programmingLanguage/shell.svg", label: "Shell" },
+        { icon: "/icons/programmingLanguage/scala.svg", label: "Scala" },
     ];
   
     const frontend = [
@@ -39,6 +40,7 @@ export default function TechStackCard() {
         { icon: "/icons/devops/kubernetes.svg", label: "Kubernetes" },
         { icon: "/icons/devops/githubactions.svg", label: "GitHub Actions" },
         { icon: "/icons/devops/apache.svg", label: "JMeter" },
+        { icon: "/icons/devops/k6.svg", label: "k6" },
     ];
 
     const cloud = [
@@ -52,6 +54,9 @@ export default function TechStackCard() {
         { icon: <span className="text-[13px]">🔌</span>, label: "Socket" },
         { icon: "/icons/distributedSystem/apache.svg", label: "Thrift" },
         { icon: "/icons/distributedSystem/apache.svg", label: "Hadoop" },
+        { icon: "/icons/distributedSystem/apache.svg", label: "Spark" },
+        { icon: "/icons/distributedSystem/apache.svg", label: "ZooKeeper" },
+        { icon: "/icons/distributedSystem/apache.svg", label: "Kafka" },
     ];
 
     const ai = [
