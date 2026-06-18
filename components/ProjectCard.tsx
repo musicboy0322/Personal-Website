@@ -9,7 +9,7 @@ interface Tag {
 interface Project {
   title: string;
   description: string;
-  link: string;
+  link?: string;
   tags: Tag[];
 }
 
