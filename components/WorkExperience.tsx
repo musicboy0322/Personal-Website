@@ -98,9 +98,6 @@ export default function ProfessionalExperienceSection() {
             <div className="mt-4 space-y-6">
               {exp.projects.map((proj, j) => (
                 <div key={j} className="space-y-2">
-                  <p className="text-[#E2E8F0] font-medium text-sm">
-                    {proj.name}
-                  </p>
                   <ul className="list-disc list-inside text-[#CBD5E1] text-sm space-y-1">
                     {proj.bullets.map((b, k) => (
                       <li key={k}>

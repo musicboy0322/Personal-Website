@@ -71,7 +71,6 @@ export default function ProfessionalExperienceSection() {
                 </h3>
               </div>
 
-              {/* 📅 時間 */}
               <span className="text-sm text-[#94A3B8]">{exp.period}</span>
             </div>
 
