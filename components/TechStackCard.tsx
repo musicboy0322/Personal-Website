@@ -15,8 +15,10 @@ export default function TechStackCard() {
       { icon: "/icons/frontend/css.svg", label: "CSS" },
       { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
       { icon: "/icons/frontend/react.svg", label: "React" },
+      { icon: "/icons/frontend/react.svg", label: "React Native" },
       { icon: "/icons/frontend/nextjs.svg", label: "Next.js" },
       { icon: "/icons/frontend/ejs.svg", label: "EJS" },
+      { icon: "/icons/frontend/svelte.svg", label: "Svelte" },
     ];
 
     const backend = [
@@ -32,6 +34,8 @@ export default function TechStackCard() {
         { icon: "/icons/database/redis.svg", label: "Redis" },
         { icon: "/icons/database/elasticsearch.svg", label: "Elasticsearch" },
         { icon: "/icons/database/supabase.svg", label: "Supabase" },
+        { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
+        { icon: "/icons/database/drizzleorm.svg", label: "Drizzle ORM" }, 
     ];
 
     const devops = [
@@ -41,17 +45,25 @@ export default function TechStackCard() {
         { icon: "/icons/devops/githubactions.svg", label: "GitHub Actions" },
         { icon: "/icons/devops/apache.svg", label: "JMeter" },
         { icon: "/icons/devops/k6.svg", label: "k6" },
+        { icon: "/icons/devops/playwright.svg", label: "Playwright" },  
     ];
 
     const cloud = [
         { icon: "/icons/cloud/azure.svg", label: "Azure OpenAI" },
+        { icon: "/icons/cloud/cloudflare.svg", label: "Cloudflare R2" }, 
         { icon: "/icons/cloud/aws.svg", label: "AWS EC2" },
+        { icon: "/icons/cloud/aws.svg", label: "AWS Cognito" },
+        { icon: "/icons/cloud/aws.svg", label: "AWS DynamoDB" },
+        { icon: "/icons/cloud/aws.svg", label: "AWS Lambda" },
+        { icon: "/icons/cloud/aws.svg", label: "AWS Gateway" },
+        { icon: "/icons/cloud/aws.svg", label: "AWS CloudWatch" },
         { icon: "/icons/cloud/ibmcloud.svg", label: "IBM Cloud Openshift" },
     ];
 
     const distributedSystem = [
         { icon: <span className="text-[13px]">📡</span>, label: "WebSocket" },
         { icon: <span className="text-[13px]">🔌</span>, label: "Socket" },
+        { icon: "/icons/distributedSystem/trpc.svg", label: "tRPC" }, 
         { icon: "/icons/distributedSystem/apache.svg", label: "Thrift" },
         { icon: "/icons/distributedSystem/apache.svg", label: "Hadoop" },
         { icon: "/icons/distributedSystem/apache.svg", label: "Spark" },

@@ -9,7 +9,7 @@ interface Tag {
 interface Project {
   title: string;
   description: string;
-  link: string;
+  link?: string;
   tags: Tag[];
 }
 
@@ -20,6 +20,19 @@ interface SelectedProjectsProps {
 export default function SelectedProjects({ type }: SelectedProjectsProps) {
   // --- Backend ---
   const backend: Project[] = [
+    {
+      title: "TableMate",
+      description: "A social dining platform that connects people through shared meals, smart matching, and restaurant experiences.",
+      tags: [
+      { icon: "/icons/programmingLanguage/go.svg", label: "Golang" },
+      { icon: "/icons/programmingLanguage/shell.svg", label: "Shell" },
+      { icon: "/icons/cloud/aws.svg", label: "AWS Cognito" },
+      { icon: "/icons/cloud/aws.svg", label: "AWS DynamoDB" },
+      { icon: "/icons/cloud/aws.svg", label: "AWS Lambda" },
+      { icon: "/icons/cloud/aws.svg", label: "AWS Gateway" },
+      { icon: "/icons/cloud/aws.svg", label: "AWS CloudWatch" },
+      ],
+    },
     {
         title: "CarTunes",
         description: "A collaborative music queue for road trips. Submit your favorite songs via LINE and enjoy synchronized playback through a web-based player.",
@@ -71,6 +84,33 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
 
   // --- Full Stack ---
   const fullstack: Project[] = [
+    {
+      title: "Arivo",
+      description: 
+        "A mobile app designed to increase awareness of how time is spent through countdowns, focus sessions, and daily activity insights.",
+      link: "https://apps.apple.com/us/app/arove/id6773894984",
+      tags: [
+        { icon: "/icons/frontend/react.svg", label: "React Native" },
+        { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
+        { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
+        { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
+      ],
+    },
+    {
+      title: "Orizuru",
+      description:
+        "A federated, decentralized Q&A platform implementing the ActivityPub protocol that allows users to host independent instances and securely track and manage questions across different servers without an account.",
+      tags: [
+        { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
+        { icon: "/icons/frontend/svelte.svg", label: "Svelte" },
+        { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
+        { icon: "/icons/database/postgresql.svg", label: "PostgreSQL" },  
+        { icon: "/icons/devops/playwright.svg", label: "Playwright" },  
+        { icon: "/icons/distributedSystem/trpc.svg", label: "tRPC" }, 
+        { icon: "/icons/database/drizzleorm.svg", label: "Drizzle ORM" }, 
+        { icon: "/icons/cloud/cloudflare.svg", label: "Cloudflare R2" }, 
+      ],
+    },
     {
       title: "Personal Website",
       description: "A personal portfolio website to showcase my projects and experience.",

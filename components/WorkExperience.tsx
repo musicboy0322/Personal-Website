@@ -13,10 +13,10 @@ export default function ProfessionalExperienceSection() {
       icon: "/icons/professional/moda.svg",
       projects: [
         {
-          name: "Automated Article Context Generation",
           bullets: [
-            "Led a 5-member team to build an end-to-end LLM service in Python, Flask, OpenAI, and Gemini.",
-            "Reduced article generation time by 15% for content across 200 websites.",
+            "Led a 5-member team to develop a Python/Flask Generative AI multi-agent system integrating multi-LLM providers, conducting code review for 10+ PRs and establishing version control best practices and SDLC processes",
+            "Elevated unit test coverage from near-zero to 85% across 14 core modules, ensuring reliability for LLM integration pipelines by decoupling tightly coupled service logic into a modular, testable architecture",
+            "Accelerated an end-to-end Multi-Agent pipeline by 15%, optimizing multi-modal data fetching (1.2 GB) within a dedicated agent via thread-safe resource management"
           ],
           tech: [
             { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
@@ -33,27 +33,19 @@ export default function ProfessionalExperienceSection() {
       icon: "/icons/professional/taiwanmobile.svg",
       projects: [
         {
-          name: "AI Text-based Customer System",
           bullets: [
-            "Built a scalable LLM-powered backend API in Python, Flask, and Azure OpenAI.",
-            "Designed a dynamic multi-assistant orchestration with session control using Redis.",
+            "Developed a scalable LLM-powered backend supporting 4+ assistants with centralized orchestration and secured Redis state management using SSL/TLS certificate authentication",
+            "Optimized token cost-efficiency by 75% and response accuracy by 90% by decomposing a 2,400-token monolithic prompt into modular 600-token specialized agents validated by empirical A/B testing",
+            "Designed JMeter stress testing scripts covering 5+ critical APIs for the myfone e-commerce platform, analyzing performance and tail latency (p95/p99) under 1,000 concurrent users",
+            "Engineered an SSL/TLS certificate monitoring service in Java, Spring Boot, Elasticsearch, and Bitbucket, reducing engineers’ daily inspection time by 84%, with automated alerts integrated into M+ messaging platform"
           ],
           tech: [
             { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
             { icon: "/icons/backend/flask.svg", label: "Flask" },
-            { icon: "/icons/cloud/azure.svg", label: "Azure OpenAI" },
-            { icon: "/icons/database/redis.svg", label: "Redis" },
-          ],
-        },
-        {
-          name: "myfone E-commerce Platform",
-          bullets: [
-            "Built an SSL/TLS certificate monitoring service in Java, Spring Boot, and Elasticsearch.",
-            "Reduced daily inspection time by 84% by integrating with the company's proprietary M+ messenger system.",
-          ],
-          tech: [
             { icon: "/icons/programmingLanguage/java.svg", label: "Java" },
             { icon: "/icons/backend/springboot.svg", label: "Spring Boot" },
+            { icon: "/icons/cloud/azure.svg", label: "Azure OpenAI" },
+            { icon: "/icons/database/redis.svg", label: "Redis" },
             { icon: "/icons/database/elasticsearch.svg", label: "Elasticsearch" },
           ],
         },
@@ -72,10 +64,8 @@ export default function ProfessionalExperienceSection() {
                        hover:border-[#06B6D4] hover:shadow-[0_8px_30px_rgba(6,182,212,0.35)] 
                        hover:-translate-y-2 transform transition-all duration-300 ease-out"
           >
-            {/* Header row */}
             <div className="flex items-center justify-between flex-wrap gap-3">
               <div className="flex items-center gap-4">
-                {/* 🏢 公司 Logo */}
                 {exp.icon && (
                   <div className="w-[44px] h-[44px] relative flex-shrink-0 bg-white rounded-md overflow-hidden">
                     <Image
@@ -153,9 +143,6 @@ export default function ProfessionalExperienceSection() {
   );
 }
 
-/**
- * 粗體 + 語法高亮
- */
 function highlightText(text: string) {
   return text
     .replace(
@@ -163,7 +150,7 @@ function highlightText(text: string) {
       '<span class="font-semibold text-[#F8FAFC]">$1</span>'
     )
     .replace(
-      /(Led a 5-member team|end-to-end LLM service|Reduced article generation time by 15%|across 200 websites|scalable LLM-powered backend API|dynamic multi-assistant orchestration|Reduced daily inspection time by 84%)/g,
+      /(5-member team|Generative AI multi-agent system|unit test coverage|near-zero to 85%|14 core modules|end-to-end Multi-Agent pipeline by 15%|\(1.2 GB\)|LLM-powered backend|4+ assistants|token cost-efficiency by 75%|response accuracy by 90%|covering 5\+ critical APIs|1,000 concurrent users|84%)/g,
       '<span class="text-[#06B6D4] font-medium">$1</span>'
     );
 }

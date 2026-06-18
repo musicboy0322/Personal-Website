@@ -16,9 +16,9 @@ export default function ProfessionalExperienceSection() {
           name: "Hyperledger Cacti",
           projectLink: "https://github.com/hyperledger-cacti/cacti",
           bullets: [
-            "Extended ERC-721 parsing and display in ledger UI using TypeScript, Node.js, Supabase, and React.",
-            "Enabled ARM64 architecture support for Cacti's Docker image by analyzing Cacti and Fabric codebases.",
-            "Authored development environment documentation to help new contributors onboard quickly.",
+            "Extended ERC-721 token parsing and display in the Cacti ledger UI by implementing frontend and backend features and unit test using TypeScript, Node.js, Supabase, and React",
+            "Resolved ARM64 Docker build compatibility issues by troubleshooting and upgrading incompatible dependencies through 2 codebases analysis of Cacti and Hyperledger Fabric",
+            "Documented missing VSCode Dev Container documentation by introducing 2 clearly defined setup workflows (beginner and advanced), improving discoverability and activation of the existing containerized development environment",
           ],
           tech: [
             { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
