@@ -11,9 +11,15 @@ export default function HomePage() {
 
   return (
     <div
-      className="bg-[#1E293B] border border-[#334155] 
-                 rounded-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)] 
-                 p-10 backdrop-blur-md text-[#F8FAFC] transition-all duration-500 mt-7"
+      className="
+        bg-[#1E293B] border border-[#334155]
+        rounded-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)]
+        p-5 sm:p-8 lg:p-10
+        backdrop-blur-md text-[#F8FAFC]
+        transition-all duration-500
+        mt-0 lg:mt-7
+        w-full
+      "
     >
       {/* control switching section*/}
       <Navbar active={activeSection} onSelect={setActiveSection} />
