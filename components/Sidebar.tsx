@@ -5,15 +5,17 @@ import { Mail, MapPin, FileText, Github, Linkedin } from "lucide-react";
 export default function Sidebar() {
   return (
     <aside
-        className="sticky top-0 self-start 
-                    bg-[#1E293B] text-[#F8FAFC] 
-                    w-fit min-w-[18rem] max-w-[22rem] 
-                    p-6 rounded-2xl shadow-[0_0_25px_rgba(6,182,212,0.25)] 
-                    border border-[#334155] 
-                    flex flex-col items-center backdrop-blur-sm 
-                    mt-7"
+      className="
+        w-full lg:w-fit lg:min-w-[18rem] lg:max-w-[22rem]
+        lg:sticky lg:top-8 self-start
+        bg-[#1E293B] text-[#F8FAFC]
+        p-5 sm:p-6 rounded-2xl
+        shadow-[0_0_25px_rgba(6,182,212,0.25)]
+        border border-[#334155]
+        flex flex-col items-center backdrop-blur-sm
+        mt-0 lg:mt-7
+      "
     >
-
       {/* Personal Picture */}
       <div className="w-32 h-32 mb-4 rounded-xl overflow-hidden border border-[#22D3EE]/50 shadow-[0_0_20px_#22D3EE40]">
         <Image
@@ -27,7 +29,7 @@ export default function Sidebar() {
 
       {/* Personal Information */}
       <div className="text-center">
-        <h1 className="text-3xl font-bold mb-2 whitespace-nowrap text-[#F8FAFC]">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center text-[#F8FAFC]">
           Kai-Lin (Kyle) Kao
         </h1>
         <p className="text-[#94A3B8] text-sm mb-6">Software Engineer</p>
@@ -44,7 +46,7 @@ export default function Sidebar() {
             <Mail size={18} className="text-[#06B6D4]" />
             <a
               href="mailto:kyle.kao.company@gmail.com"
-              className="text-sm hover:text-[#22D3EE] transition"
+              className="text-sm hover:text-[#22D3EE] transition break-all"
             >
               kyle.kao.company@gmail.com
             </a>
@@ -57,7 +59,7 @@ export default function Sidebar() {
               href="https://github.com/musicboy0322"
               target="_blank"
               rel="noreferrer"
-              className="text-sm hover:text-[#22D3EE] transition"
+              className="text-sm hover:text-[#22D3EE] transition break-all"
             >
               github.com/musicboy0322
             </a>
@@ -70,7 +72,7 @@ export default function Sidebar() {
               href="https://www.linkedin.com/in/kyle-kao-software"
               target="_blank"
               rel="noreferrer"
-              className="text-sm hover:text-[#22D3EE] transition"
+              className="text-sm hover:text-[#22D3EE] transition break-all"
             >
               linkedin.com/in/kyle-kao-software
             </a>
@@ -83,7 +85,7 @@ export default function Sidebar() {
               href="https://drive.google.com/file/d/1UWRNm9szjVr5pyJibeZ2rKOuwrhuIjov/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="text-sm hover:text-[#22D3EE] transition"
+              className="text-sm hover:text-[#22D3EE] transition break-all"
             >
               View CV
             </a>

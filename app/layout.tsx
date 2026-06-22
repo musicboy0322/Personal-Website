@@ -14,13 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#0F172A] text-[#F8FAFC] font-sans antialiased p-8">
-        {/* main contaniner */}
-        <div className="flex flex-row gap-8 items-start max-w-[1200px] mx-auto">
-          {/* left part */}
+      <body className="bg-[#0F172A] text-[#F8FAFC] font-sans antialiased px-4 py-6 md:p-8">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-stretch lg:items-start max-w-[1200px] mx-auto">
           <Sidebar />
-          {/* right part */}
-          <main className="flex-1">{children}</main>
+          <main className="w-full flex-1 min-w-0">{children}</main>
         </div>
       </body>
     </html>
