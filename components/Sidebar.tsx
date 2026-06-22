@@ -14,7 +14,7 @@ export default function Sidebar() {
                     mt-7"
     >
 
-      {/* 🖼️ 個人照片 */}
+      {/* Personal Picture */}
       <div className="w-32 h-32 mb-4 rounded-xl overflow-hidden border border-[#22D3EE]/50 shadow-[0_0_20px_#22D3EE40]">
         <Image
           src="/headshot.jpeg"
@@ -25,7 +25,7 @@ export default function Sidebar() {
         />
       </div>
 
-      {/* 上方：個人資訊 */}
+      {/* Personal Information */}
       <div className="text-center">
         <h1 className="text-3xl font-bold mb-2 whitespace-nowrap text-[#F8FAFC]">
           Kai-Lin (Kyle) Kao
@@ -91,7 +91,7 @@ export default function Sidebar() {
         </ul>
       </div>
 
-      {/* 底部版權 */}
+      {/* Copyright */}
       <footer className="text-xs text-[#64748B] mt-6">
         © {new Date().getFullYear()} Kyle Kao
       </footer>

@@ -46,7 +46,7 @@ export default function ProfessionalExperienceSection() {
             {/* Header row */}
             <div className="flex items-center justify-between flex-wrap gap-3">
               <div className="flex items-center gap-4">
-                {/* 🏢 公司 Logo */}
+                {/* Company logo */}
                 {exp.icon && (
                   <div className="w-[44px] h-[44px] relative flex-shrink-0 bg-white rounded-md overflow-hidden">
                     <Image
@@ -78,7 +78,7 @@ export default function ProfessionalExperienceSection() {
             <div className="mt-4 space-y-6">
               {exp.projects.map((proj, j) => (
                 <div key={j} className="space-y-3">
-                {/* 🧩 Project name with optional link */}
+                {/* Project name with optional link */}
                 {proj.projectLink ? (
                   <a
                     href={proj.projectLink}
@@ -107,7 +107,7 @@ export default function ProfessionalExperienceSection() {
                   ))}
                 </ul>
               
-                {/* 💡 Tech Stack 卡片 */}
+                {/* Tech Stack */}
                 {proj.tech && (
                   <div className="flex flex-wrap gap-2 mt-3">
                     {proj.tech.map((t, idx) => (

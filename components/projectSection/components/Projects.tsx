@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../../shared/ProjectCard";
 import React from "react";
 
 interface Tag {
@@ -13,12 +13,12 @@ interface Project {
   tags: Tag[];
 }
 
-interface SelectedProjectsProps {
+interface ProjectsProps {
   type?: "backend" | "fullstack" | "distributedSystem" | "ai";
 }
 
-export default function SelectedProjects({ type }: SelectedProjectsProps) {
-  // --- Backend ---
+export default function Projects({ type }: ProjectsProps) {
+  // Backend
   const backend: Project[] = [
     {
       title: "TableMate",
@@ -82,7 +82,7 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
     },
   ];
 
-  // --- Full Stack ---
+  // Full Stack
   const fullstack: Project[] = [
     {
       title: "Arivo",
@@ -136,7 +136,7 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
       },
   ];
 
-  // --- Distributed System ---
+  // Distributed System
   const distributed: Project[] = [
       {
         title: "Self-Adaptive CarTunes",
@@ -192,7 +192,7 @@ export default function SelectedProjects({ type }: SelectedProjectsProps) {
     },
   ];
 
-  // --- AI ---
+  // AI
   const ai: Project[] = [
     {
         title: "NER Model Learning",

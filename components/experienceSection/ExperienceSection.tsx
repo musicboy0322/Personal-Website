@@ -1,7 +1,7 @@
-import Education from "../Education";
-import WorkExperience from "../WorkExperience";
-import OpenSourceContribution from "../OpenSourceContribution";
-import SectionTitle from "../SectionTitle";
+import Education from "./components/Education";
+import WorkExperience from "./components/WorkExperience";
+import OpenSourceContribution from "./components/OpenSourceContribution";
+import SectionTitle from "../shared/SectionTitle";
 
 
 export default function ExperienceSection() {

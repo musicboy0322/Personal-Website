@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../../shared/ProjectCard";
 
 export default function SelectedProjects() {
     const projects = [

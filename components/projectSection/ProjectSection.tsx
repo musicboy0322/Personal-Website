@@ -1,5 +1,5 @@
-import SectionTitle from "../SectionTitle";
-import Projects from "../Projects";
+import SectionTitle from "../shared/SectionTitle";
+import Projects from "./components/Projects";
 
 export default function ProjectSection() {
     return (

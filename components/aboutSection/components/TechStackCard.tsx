@@ -1,4 +1,3 @@
-// components/TechStackCard.tsx
 export default function TechStackCard() {
     const programmingLanguages = [
         { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
@@ -82,7 +81,7 @@ export default function TechStackCard() {
   
     return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* --- Programming Languages --- */}
+        {/* Programming Languages */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             Programming Languages
@@ -104,7 +103,7 @@ export default function TechStackCard() {
           </div>
         </div>
   
-        {/* --- Frontend --- */}
+        {/* Frontend */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             Frontend
@@ -126,7 +125,7 @@ export default function TechStackCard() {
           </div>
         </div>
 
-        {/* --- Backend --- */}
+        {/* Backend */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             Backend
@@ -148,7 +147,7 @@ export default function TechStackCard() {
           </div>
         </div>
 
-        {/* --- Database --- */}
+        {/* Database */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             Database
@@ -170,7 +169,7 @@ export default function TechStackCard() {
           </div>
         </div>
 
-        {/* --- Cloud --- */}
+        {/* Cloud */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             Cloud
@@ -192,7 +191,7 @@ export default function TechStackCard() {
           </div>
         </div>
 
-        {/* --- DevOps --- */}
+        {/* DevOps */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             DevOps
@@ -214,7 +213,7 @@ export default function TechStackCard() {
           </div>
         </div>
 
-        {/* --- Distributed System --- */}
+        {/* Distributed System */}
         <div className="bg-[#1E293B] border border-[#334155] rounded-2xl p-6 shadow-[0_0_25px_rgba(6,182,212,0.15)]">
           <h3 className="flex items-center gap-2 text-white font-semibold text-lg mb-4">
             Distributed System

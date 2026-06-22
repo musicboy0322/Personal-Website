@@ -110,7 +110,7 @@ export default function ProfessionalExperienceSection() {
                     ))}
                   </ul>
 
-                  {/* 💡 Tech Stack 卡片 */}
+                  {/* Tech Stack */}
                   {proj.tech && (
                     <div className="flex flex-wrap gap-2 mt-3">
                       {proj.tech.map((t, idx) => (
