@@ -14,12 +14,12 @@ interface Project {
 }
 
 interface ProjectsProps {
-  type?: "backend" | "fullstack" | "distributedSystem" | "ai";
+  type?: "mobile" | "backend" | "fullstack" | "distributedSystem" | "ai";
 }
 
 export default function Projects({ type }: ProjectsProps) {
-  // Full Stack
-  const fullstack: Project[] = [
+  // Mobile
+  const mobile: Project[] = [
     {
       title: "Arivo",
       description: 
@@ -32,6 +32,10 @@ export default function Projects({ type }: ProjectsProps) {
         { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
       ],
     },
+  ];
+
+  // Full Stack
+  const fullstack: Project[] = [
     {
       title: "Orizuru",
       description:
@@ -221,8 +225,9 @@ export default function Projects({ type }: ProjectsProps) {
   ];
 
   const categories = {
-    backend: backend,
+    mobile: mobile,
     fullstack: fullstack,
+    backend: backend,
     distributedSystem: distributed,
     ai: ai,
   };
