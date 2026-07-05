@@ -3,6 +3,18 @@ import ProjectCard from "../../shared/ProjectCard";
 export default function SelectedProjects() {
     const projects = [
       {
+        title: "Arivo",
+        description: 
+          "A mobile app designed to increase awareness of how time is spent through countdowns, focus sessions, and daily activity insights.",
+        link: "https://apps.apple.com/us/app/arove/id6773894984",
+        tags: [
+          { icon: "/icons/frontend/react.svg", label: "React Native" },
+          { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
+          { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
+          { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
+        ],
+      },
+      {
         title: "CarTunes",
         description: "A collaborative music queue for road trips. Submit your favorite song via LINE, enjoy the vibes with a web-based player.",
         link: "https://github.com/HappyGroupHub/CarTunes",
@@ -11,17 +23,6 @@ export default function SelectedProjects() {
             { icon: "/icons/backend/fastapi.svg", label: "FastAPI" },          
             { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
             { icon: <span className="text-[14px]">📡</span>, label: "WebSocket" },
-        ],
-      },
-      {
-        title: "Distributed Ledger",
-        description: "Built a blockchain-like distributed ledger system to explore concurrency, replication, and consistency across nodes.",
-        link: "https://github.com/musicboy0322/Distributed-Ledger",
-        tags: [
-            { icon: "/icons/programmingLanguage/go.svg", label: "Golang" },
-            { icon: <span className="text-[13px]">🔌</span>, label: "Socket" },
-            { icon: "/icons/devops/docker.svg", label: "Docker" },
-            { icon: "/icons/devops/kubernetes.svg", label: "Kubernetes" },
         ],
       },
     ];

@@ -18,6 +18,60 @@ interface ProjectsProps {
 }
 
 export default function Projects({ type }: ProjectsProps) {
+  // Full Stack
+  const fullstack: Project[] = [
+    {
+      title: "Arivo",
+      description: 
+        "A mobile app designed to increase awareness of how time is spent through countdowns, focus sessions, and daily activity insights.",
+      link: "https://apps.apple.com/us/app/arove/id6773894984",
+      tags: [
+        { icon: "/icons/frontend/react.svg", label: "React Native" },
+        { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
+        { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
+        { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
+      ],
+    },
+    {
+      title: "Orizuru",
+      description:
+        "A federated, decentralized Q&A platform implementing the ActivityPub protocol that allows users to host independent instances and securely track and manage questions across different servers without an account.",
+      tags: [
+        { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
+        { icon: "/icons/frontend/svelte.svg", label: "Svelte" },
+        { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
+        { icon: "/icons/database/postgresql.svg", label: "PostgreSQL" },  
+        { icon: "/icons/devops/playwright.svg", label: "Playwright" },  
+        { icon: "/icons/distributedSystem/trpc.svg", label: "tRPC" }, 
+        { icon: "/icons/database/drizzleorm.svg", label: "Drizzle ORM" }, 
+        { icon: "/icons/cloud/cloudflare.svg", label: "Cloudflare R2" }, 
+      ],
+    },
+    {
+      title: "Personal Website",
+      description: "A personal portfolio website to showcase my projects and experience.",
+      link: "https://github.com/musicboy0322/Personal-Website",
+      tags: [
+            { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
+            { icon: "/icons/frontend/react.svg", label: "React" },
+            { icon: "/icons/frontend/nextjs.svg", label: "Next.js" },
+            { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
+      ],
+    },
+    {
+        title: "Surgery Scheduling Website",
+        description:
+          "A web application that optimizes surgery scheduling and operating room management for hospital.",
+        link: "https://github.com/musicboy0322/Surgery-Scheduling-Website",
+        tags: [
+            { icon: "/icons/programmingLanguage/javascript.svg", label: "JavaScript" },
+            { icon: "/icons/backend/nodejs.svg", label: "Node.js" },
+            { icon: "/icons/frontend/ejs.svg", label: "EJS" },
+            { icon: "/icons/database/mysql.svg", label: "MySQL" },       
+        ],
+      },
+  ];
+
   // Backend
   const backend: Project[] = [
     {
@@ -80,60 +134,6 @@ export default function Projects({ type }: ProjectsProps) {
         { icon: "/icons/database/mongodb.svg", label: "MongoDB" },
         ],
     },
-  ];
-
-  // Full Stack
-  const fullstack: Project[] = [
-    {
-      title: "Arivo",
-      description: 
-        "A mobile app designed to increase awareness of how time is spent through countdowns, focus sessions, and daily activity insights.",
-      link: "https://apps.apple.com/us/app/arove/id6773894984",
-      tags: [
-        { icon: "/icons/frontend/react.svg", label: "React Native" },
-        { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
-        { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
-        { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
-      ],
-    },
-    {
-      title: "Orizuru",
-      description:
-        "A federated, decentralized Q&A platform implementing the ActivityPub protocol that allows users to host independent instances and securely track and manage questions across different servers without an account.",
-      tags: [
-        { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
-        { icon: "/icons/frontend/svelte.svg", label: "Svelte" },
-        { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
-        { icon: "/icons/database/postgresql.svg", label: "PostgreSQL" },  
-        { icon: "/icons/devops/playwright.svg", label: "Playwright" },  
-        { icon: "/icons/distributedSystem/trpc.svg", label: "tRPC" }, 
-        { icon: "/icons/database/drizzleorm.svg", label: "Drizzle ORM" }, 
-        { icon: "/icons/cloud/cloudflare.svg", label: "Cloudflare R2" }, 
-      ],
-    },
-    {
-      title: "Personal Website",
-      description: "A personal portfolio website to showcase my projects and experience.",
-      link: "https://github.com/musicboy0322/Personal-Website",
-      tags: [
-            { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
-            { icon: "/icons/frontend/react.svg", label: "React" },
-            { icon: "/icons/frontend/nextjs.svg", label: "Next.js" },
-            { icon: "/icons/frontend/tailwindcss.svg", label: "Tailwind CSS" },
-      ],
-    },
-    {
-        title: "Surgery Scheduling Website",
-        description:
-          "A web application that optimizes surgery scheduling and operating room management for hospital.",
-        link: "https://github.com/musicboy0322/Surgery-Scheduling-Website",
-        tags: [
-            { icon: "/icons/programmingLanguage/javascript.svg", label: "JavaScript" },
-            { icon: "/icons/backend/nodejs.svg", label: "Node.js" },
-            { icon: "/icons/frontend/ejs.svg", label: "EJS" },
-            { icon: "/icons/database/mysql.svg", label: "MySQL" },       
-        ],
-      },
   ];
 
   // Distributed System

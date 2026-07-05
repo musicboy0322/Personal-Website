@@ -82,7 +82,7 @@ export default function Sidebar() {
           <li className="flex items-center gap-3">
             <FileText size={18} className="text-[#06B6D4]" />
             <a
-              href="https://drive.google.com/file/d/1UWRNm9szjVr5pyJibeZ2rKOuwrhuIjov/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r2HdsN83ZYUzz5tSPXdho4i-7EsUeP43/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="text-sm hover:text-[#22D3EE] transition break-all"

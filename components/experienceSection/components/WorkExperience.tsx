@@ -14,9 +14,9 @@ export default function ProfessionalExperienceSection() {
       projects: [
         {
           bullets: [
-            "Led a 5-member team to develop a Python/Flask Generative AI multi-agent system integrating multi-LLM providers, conducting code review for 10+ PRs and establishing version control best practices and SDLC processes",
-            "Elevated unit test coverage from near-zero to 85% across 14 core modules, ensuring reliability for LLM integration pipelines by decoupling tightly coupled service logic into a modular, testable architecture",
-            "Accelerated an end-to-end Multi-Agent pipeline by 15%, optimizing multi-modal data fetching (1.2 GB) within a dedicated agent via thread-safe resource management"
+            "Led a 5-member team to develop a Generative AI multi-agent system integrating multi-LLM providers, conducting code reviews for 10+ PRs and establishing version control best practices and SDLC processes",
+            "Refactored 14 tightly coupled LLM integration modules into a modular, testable architecture, increasing unit test coverage from near-zero to 85% while enabling reliable automated validation across critical service pipelines",
+            "Accelerated an end-to-end Multi-Agent pipeline by 15% by optimizing multi-modal data fetching of 1.2 GB within a dedicated agent through thread-safe resource management"
           ],
           tech: [
             { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
@@ -34,7 +34,7 @@ export default function ProfessionalExperienceSection() {
       projects: [
         {
           bullets: [
-            "Developed a scalable LLM-powered backend supporting 4+ assistants with centralized orchestration and secured Redis state management using SSL/TLS certificate authentication",
+            "Architected a scalable LLM-powered backend supporting 4+ assistants with centralized orchestration and secured Redis state management using SSL/TLS certificate authentication",
             "Optimized token cost-efficiency by 75% and response accuracy by 90% by decomposing a 2,400-token monolithic prompt into modular 600-token specialized agents validated by empirical A/B testing",
             "Designed JMeter stress testing scripts covering 5+ critical APIs for the myfone e-commerce platform, analyzing performance and tail latency (p95/p99) under 1,000 concurrent users",
             "Engineered an SSL/TLS certificate monitoring service in Java, Spring Boot, Elasticsearch, and Bitbucket, reducing engineers’ daily inspection time by 84%, with automated alerts integrated into M+ messaging platform"
@@ -147,7 +147,7 @@ function highlightText(text: string) {
       '<span class="font-semibold text-[#F8FAFC]">$1</span>'
     )
     .replace(
-      /(5-member team|Generative AI multi-agent system|unit test coverage|near-zero to 85%|14 core modules|end-to-end Multi-Agent pipeline by 15%|\(1.2 GB\)|LLM-powered backend|4+ assistants|token cost-efficiency by 75%|response accuracy by 90%|covering 5\+ critical APIs|1,000 concurrent users|84%)/g,
+      /(5-member team | Generative AI multi-agent system | code reviews for 10+ PRs | 14 tightly coupled LLM integration modules | modular, testable architecture | unit test coverage from near-zero to 85% | end-to-end Multi-Agent pipeline by 15% | 1.2 GB | LLM-powered backend supporting 4\+ assistants | token cost-efficiency by 75% | response accuracy by 90% | 5+ critical APIs | performance and tail latency \(p95\/p99\) | 1,000 concurrent users | SSL\/TLS certificate monitoring service | 84%)/g,
       '<span class="text-[#06B6D4] font-medium">$1</span>'
     );
 }

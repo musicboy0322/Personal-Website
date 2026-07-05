@@ -16,9 +16,9 @@ export default function ProfessionalExperienceSection() {
           name: "Hyperledger Cacti",
           projectLink: "https://github.com/hyperledger-cacti/cacti",
           bullets: [
-            "Extended ERC-721 token parsing and display in the Cacti ledger UI by implementing frontend and backend features and unit test using TypeScript, Node.js, Supabase, and React",
-            "Resolved ARM64 Docker build compatibility issues by troubleshooting and upgrading incompatible dependencies through 2 codebases analysis of Cacti and Hyperledger Fabric",
-            "Documented missing VSCode Dev Container documentation by introducing 2 clearly defined setup workflows (beginner and advanced), improving discoverability and activation of the existing containerized development environment",
+            "Delivered a full-stack ERC-721 metadata feature by extending the Ethereum persistence pipeline to synchronize 3 NFT metadata fields across PostgreSQL, TypeScript services, React UI, and integration testing",
+            "Resolved ARM64 Docker build compatibility issues by tracing dependency incompatibilities across the LFDT Cacti and Fabric codebases, restoring a reliable cross-platform development environment",
+            "Improved developer onboarding by designing 2 VSCode Dev Container setup workflows (beginner and advanced), standardizing the containerized development environment",
           ],
           tech: [
             { icon: "/icons/programmingLanguage/typescript.svg", label: "TypeScript" },
@@ -145,7 +145,7 @@ function highlightText(text: string) {
       '<span class="font-semibold text-[#F8FAFC]">$1</span>'
     )
     .replace(
-      /\b(analyzing Cacti and Fabric codebases|development environment documentation)\b/g,
+      /\b(full-stack ERC-721 metadata feature | 3 NFT metadata fields | integration testing | ARM64 Docker build compatibility issues | LFDT Cacti and Fabric codebases | developer onboarding | 2 VSCode Dev Container setup workflows)\b/g,
       '<span class="text-[#06B6D4] font-medium">$1</span>'
     );
 }
