@@ -81,6 +81,7 @@ export default function Projects({ type }: ProjectsProps) {
     {
       title: "TableMate",
       description: "A social dining platform that connects people through shared meals, smart matching, and restaurant experiences.",
+      link: "https://github.com/musicboy0322/Architecture-Designs/blob/main/tablemate-architecture.md",
       tags: [
       { icon: "/icons/programmingLanguage/go.svg", label: "Golang" },
       { icon: "/icons/programmingLanguage/shell.svg", label: "Shell" },
