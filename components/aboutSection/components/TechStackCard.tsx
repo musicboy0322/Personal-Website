@@ -35,6 +35,7 @@ export default function TechStackCard() {
         { icon: "/icons/database/supabase.svg", label: "Supabase" },
         { icon: "/icons/database/sqlite.svg", label: "SQLite" }, 
         { icon: "/icons/database/drizzleorm.svg", label: "Drizzle ORM" }, 
+        { icon: "/icons/database/beanieorm.svg", label: "BeanieODM" },
     ];
 
     const devops = [

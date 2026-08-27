@@ -7,6 +7,27 @@ export default function ProfessionalExperienceSection() {
   const experiences = [
     {
       title: "Software Engineer Intern",
+      company: "DuoHour",
+      companyLink: "https://duohour.com/",
+      period: "Sep. 2026 – Present",
+      icon: "/icons/professional/duohour.png",
+      projects: [
+        {
+          bullets: [
+          ],
+          tech: [
+            { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
+            { icon: "/icons/backend/fastapi.svg", label: "FastAPI" },
+            { icon: "/icons/database/mongodb.svg", label: "MongoDB" },
+            { icon: "/icons/database/beanieorm.svg", label: "BeanieODM" },
+            { icon: "/icons/devops/docker.svg", label: "Docker" },
+
+          ],
+        },
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
       company: "Ministry of Digital Affairs",
       companyLink: "https://moda.gov.tw/en/",
       period: "Mar. 2024 – Jul. 2024",
