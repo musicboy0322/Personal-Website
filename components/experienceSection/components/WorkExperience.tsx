@@ -14,6 +14,7 @@ export default function ProfessionalExperienceSection() {
       projects: [
         {
           bullets: [
+            "Incoming Fall 2026 Full-Stack Intern"
           ],
           tech: [
             { icon: "/icons/programmingLanguage/python.svg", label: "Python" },
